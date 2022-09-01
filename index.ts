@@ -1,6 +1,5 @@
-const world = 'world';
+import dotenv from 'dotenv'
+import app from './src/app'
 
-export function hello(who: string = world): string {
-  return `Hello ${who}! `;
-}
-hello()
+dotenv.config();
+app()
