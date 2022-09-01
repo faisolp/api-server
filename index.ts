@@ -1,5 +1,3 @@
-import dotenv from 'dotenv'
-import app from './src/app'
 
-dotenv.config();
+import app from './src/app'
 app()

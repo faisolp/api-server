@@ -1,8 +1,13 @@
 import config from '../../config';
 import { getAuth } from '../../library/auth';
+import dotenv from 'dotenv'
+dotenv.config();
 
 const NEXT_PUBLIC_Secret= process.env.NEXT_PUBLIC_Secret||"undefined"
 const {mongoConfig}=config
+
+
+
 
 const get  = (id:string)=>{
     const userAuth =getAuth(mongoConfig.options.token,NEXT_PUBLIC_Secret);
